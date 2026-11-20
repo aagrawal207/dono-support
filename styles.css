@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Baloo 2";
+  src: url("Baloo2-Variable.ttf") format("truetype");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  font-family: ui-rounded, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  --sky: #0f68d5;
+  --sky-deep: #0b57d0;
+  --sun: #f89f1e;
+  --navy: #0c2a5c;
+  --ink: #1a1c24;
+  --soft: #5b6270;
+  --ground: #ecf3fd;
+  --card: #ffffff;
+  --line: rgba(26, 28, 36, 0.10);
+  color: var(--ink);
+  background: var(--ground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ffffff;
+    --soft: #a6a6a6;
+    --ground: #121212;
+    --card: #232323;
+    --line: rgba(255, 255, 255, 0.12);
+    --sky: #5aa2f2;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+  overflow-wrap: break-word;
+}
+
+a { color: var(--sky); text-underline-offset: 0.18em; }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0 1rem;
+}
+
+header img { width: 72px; height: 72px; border-radius: 16px; }
+
+h1, h2, h3, nav a {
+  font-family: "Baloo 2", ui-rounded, system-ui, sans-serif;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.2rem; margin: 0; font-weight: 800; }
+h2 { font-size: 1.4rem; margin: 2rem 0 0.5rem; font-weight: 700; }
+h3 { font-size: 1.1rem; margin: 1.2rem 0 0.3rem; font-weight: 700; }
+
+.tagline { color: var(--soft); margin: 0.2rem 0 0; }
+
+nav { display: flex; gap: 1.2rem; flex-wrap: wrap; margin: 0.5rem 0 1.5rem; }
+nav a { font-weight: 700; text-decoration: none; }
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(2, 2, 9, 0.06);
+}
+
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+
+ul { padding-left: 1.2rem; }
+li { margin: 0.3rem 0; }
+
+.steps li::marker { color: var(--sun); font-weight: 700; }
+
+.path { font-weight: 600; }
+
+footer { color: var(--soft); font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+
+table { border-collapse: collapse; width: 100%; }
+td, th { text-align: left; padding: 0.4rem 0.5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
