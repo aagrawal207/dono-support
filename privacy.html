@@ -11,13 +11,13 @@
     <img src="icon.png" alt="">
     <div>
       <h1>Privacy</h1>
-      <p class="tagline">Dono: Hinglish Keyboard. Last updated 21 November 2026.</p>
+      <p class="tagline">Dono: Hinglish Keyboard. Last updated 22 November 2026.</p>
     </div>
   </header>
   <nav><a href="index.html">Home</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a><a href="data/">Word lists</a></nav>
 
   <div class="card">
-    <p><strong>In short:</strong> what you type stays on your iPhone. Dono has no account, no ads, no analytics and no server of its own. The only things that leave your iPhone are GIF searches, sent to the GIF services, and the sync to your own iCloud, which you can turn off.</p>
+    <p><strong>In short:</strong> what you type stays on your iPhone. Dono has no account and no ads. What leaves your iPhone: GIF searches, sent to the GIF service; the sync to your own iCloud; and anonymous counts of how Dono is used, sent to TelemetryDeck. You can turn off the sync and the counts in the Dono app.</p>
   </div>
 
   <h2>What Dono keeps on your iPhone</h2>
@@ -36,6 +36,19 @@
   <p>Your learned words, the emoji you use and your details are stored in your own private iCloud database, through Apple's CloudKit, so your other iPhones can use them. The developer cannot read this data. Contacts and the clipboard list are never synced. Turn sync off in the Dono app, and choose there whether to delete the iCloud copy.</p>
   <h3>GIF search (with Full Access)</h3>
   <p>When you open GIFs or search for one, Dono sends the search words, your country and language, and a random number made for this install to <a href="https://klipy.com/support/privacy-policy">KLIPY</a> or <a href="https://giphy.com/privacy">GIPHY</a>, and tells them which GIF you copied. The search may come from the words just before your cursor, which you see in the search field. Nothing else you type is sent. Their own privacy policies apply to what they receive.</p>
+  <h3>Anonymous usage data (on unless you turn it off)</h3>
+  <p>From version 1.0.1, Dono sends anonymous counts of use to <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a>, a privacy-focused analytics service, so the developer can see which features people use and where they get stuck. Turn it off in the Dono app: Privacy › Share anonymous usage. Turning it off deletes the random id and anything not yet sent. While Incognito is on, nothing is counted.</p>
+  <p>What is sent, about once a day:</p>
+  <ul>
+    <li>Counts of use: keys and words typed, words typed by glide, suggestions tapped by kind and place in the bar, autocorrections kept or undone (with whether the fixed word was English or Hinglish and the kind of slip, such as a neighbouring key, never the words), which keyboard pages, panels and settings were used, which kinds of field the keyboard came up in (for example email or search), which symbols were picked from the symbols page or a long press, and the first day you used each feature, such as glide typing or GIFs.</li>
+    <li>How the keyboard is doing: how long it takes to come up and to open the emoji and GIF panels, whether iOS warned it about memory, and whether it came back after iOS closed it.</li>
+    <li>A rough share of Hinglish in your typing: mostly English, mixed or mostly Hinglish.</li>
+    <li>Your Dono settings, whether you are in the free trial or unlocked, roughly how many days since you installed Dono, and the app icon you picked.</li>
+    <li>The app version, iPhone model, iOS version, and the region and language set on your iPhone (a setting, not your location).</li>
+    <li>When a purchase ends, which item it was and whether it went through, and when setup is complete.</li>
+  </ul>
+  <p>Each count carries a random id made by Dono on this iPhone and scrambled (hashed) before it is sent. It is not your name, Apple Account, advertising id or device id. The keyboard adds its counts only while Full Access is on; the app sends its own.</p>
+  <p>Never sent: what you type, your words or learned words, suggestions, corrections, the clipboard, GIF or emoji searches, your details, your contacts, web addresses, or the apps you type in. Nothing is linked to you or used for tracking or ads.</p>
   <h3>Purchases</h3>
   <p>The free trial and the unlock go through Apple's App Store. Dono only learns whether they are active.</p>
 
@@ -48,6 +61,7 @@
 
   <h2>Delete your data</h2>
   <p>In the Dono app, open Privacy › Delete my data. It removes your learned words, emoji use, clipboard list, details and contacts from your iPhone and from your iCloud. Deleting the app also deletes what it kept on your iPhone.</p>
+  <p>Turning off Share anonymous usage deletes the usage id and the counts not yet sent. Counts already sent are anonymous and cannot be traced back to you.</p>
 
   <h2>Children</h2>
   <p>Dono is not meant for children under 13, because the GIF services do not allow users under 13.</p>
